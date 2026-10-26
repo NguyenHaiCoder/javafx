@@ -1,0 +1,131 @@
+/* Palette: primary #3B6FE8, success #2EAA66, background #F4F6FF, card #FDFCFF,
+   text #1B1F3B, muted #6B7090, border #E2DFF5 */
+
+.root {
+    -fx-font-family: "Segoe UI", "Arial";
+    -fx-font-size: 15px;
+    -fx-background-color: #F4F6FF;
+    -fx-accent: #3B6FE8;
+    -fx-focus-color: #3B6FE8;
+}
+
+.page {
+    -fx-padding: 24;
+}
+
+.card {
+    -fx-background-color: #FDFCFF;
+    -fx-background-radius: 14;
+    -fx-border-color: #E2DFF5;
+    -fx-border-radius: 14;
+    -fx-padding: 24;
+    -fx-spacing: 18;
+    -fx-effect: dropshadow(gaussian, rgba(27, 31, 59, 0.08), 16, 0, 0, 4);
+}
+
+.title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1B1F3B;
+}
+
+.muted {
+    -fx-text-fill: #6B7090;
+}
+
+/* Round step number: "1" Consignment, "2" Inspection */
+.badge-step {
+    -fx-background-color: #3B6FE8;
+    -fx-background-radius: 18;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+    -fx-min-width: 36;
+    -fx-min-height: 36;
+}
+
+.badge-step.green {
+    -fx-background-color: #2EAA66;
+}
+
+.plate-badge {
+    -fx-background-color: #E5EEFF;
+    -fx-background-radius: 999;
+    -fx-text-fill: #2448A8;
+    -fx-font-weight: bold;
+    -fx-padding: 6 16;
+}
+
+.text-field, .combo-box, .text-area {
+    -fx-background-radius: 8;
+}
+
+/* Buttons */
+.button {
+    -fx-background-radius: 8;
+    -fx-padding: 8 18;
+    -fx-cursor: hand;
+}
+
+.button.primary, .button.success, .button.danger {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.button.primary { -fx-background-color: #3B6FE8; }
+.button.primary:hover { -fx-background-color: #2F5DD0; }
+.button.success { -fx-background-color: #2EAA66; }
+.button.success:hover { -fx-background-color: #258F55; }
+.button.danger { -fx-background-color: #E5484D; }
+.button.danger:hover { -fx-background-color: #CC3A3F; }
+
+.button:disabled {
+    -fx-opacity: 0.5;
+}
+
+/* Table */
+.table-view {
+    -fx-selection-bar: #D6E2FF;
+    -fx-selection-bar-non-focused: #E5EEFF;
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color: #EEF0FF;
+}
+
+.table-view .column-header .label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #1B1F3B;
+}
+
+.table-row-cell {
+    -fx-cell-size: 40;
+}
+
+/* Custom pseudo-class set by ConsignmentController */
+.table-row-cell:inspected {
+    -fx-background: #E3F7F3;
+}
+
+/* Checklist */
+.check-box {
+    -fx-font-size: 16px;
+}
+
+.check-box .box {
+    -fx-background-radius: 4;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #3B6FE8;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: white;
+}
+
+.progress {
+    -fx-text-fill: #2EAA66;
+    -fx-font-weight: bold;
+}
